@@ -1,0 +1,101 @@
+span {
+  color: red;
+}
+
+#feedbackForm {
+  width: 50%;
+  margin: auto;
+  margin-top: 7rem;
+  min-height: 70vh;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px; /* Decrease padding for smaller input fields */
+  margin-bottom: 12px; /* Adjust margin for smaller input fields */
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px grey;
+  border: 2px solid white;
+  box-shadow: 0px 4px 1px grey;
+  padding: 0.6rem 1.4rem; /* Adjust padding for smaller button size */
+  border-radius: 10px;
+  color: white;
+  width: fit-content;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+h2 {
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  #feedbackForm {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #feedbackForm {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  input,
+  textarea {
+    width: 100%;
+  }
+  button {
+    padding: 0.5rem 1.2rem; /* Adjust padding for smaller button size */
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #feedbackForm {
+    margin-top: 5rem;
+  }
+}

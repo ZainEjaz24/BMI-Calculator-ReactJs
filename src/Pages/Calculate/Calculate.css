@@ -1,0 +1,429 @@
+span {
+  color: red;
+}
+
+.calculate-main-container {
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.Hero-section {
+  margin-top: 3rem;
+  background-image: url("../../Assets/BMI Calc.png");
+  background-size: cover;
+}
+.Content {
+  width: 60%;
+  margin: auto;
+  line-height: 2rem;
+}
+
+#calculate-btn {
+  width: 09rem;
+}
+
+input {
+  background-color: white;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin: 0.2rem 0rem;
+  box-shadow: 2px 4px 4px rgb(147, 147, 147);
+}
+
+label {
+  color: black;
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+}
+
+.units-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.units-selection select {
+  margin-left: 1rem;
+}
+
+.form-in {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 60%;
+  margin: auto;
+}
+
+h2 {
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+select {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  margin: 0.2rem;
+  box-shadow: 2px 4px 4px rgb(166, 166, 166);
+}
+
+.form-side {
+  background-color: rgba(256, 256, 256, 0.5);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  width: 80%;
+  margin: auto;
+  border-radius: 10%;
+  box-shadow: 1px 3px 3px 3px rgba(137, 137, 137, 0.596);
+}
+.selection {
+  display: flex;
+  align-items: center;
+}
+
+.ft-in {
+  display: flex;
+  align-items: center;
+}
+#result {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.input-group label {
+  width: 12rem;
+}
+
+.w8-in {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1130px) {
+  body {
+    font-size: 75%;
+  }
+
+  .form-side {
+    width: 20rem;
+    border-radius: 0%;
+    margin: 0.5rem 0rem 2rem 0rem;
+    margin-left: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.696);
+    padding-bottom: 1rem;
+    padding: 0.5rem 2rem 2rem 2rem;
+  }
+  .ft-in input {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+  .w8-in input {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+  select {
+    padding: 0.5rem 0.8rem;
+    width: 8rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .form-in {
+    width: 8rem;
+    margin-left: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-in h2 {
+    margin-bottom: 0.5rem;
+  }
+  label {
+    font-size: 1rem;
+    width: 6rem;
+  }
+  #result {
+    margin-left: 3rem;
+  }
+  option {
+    font-size: 0.8rem;
+  }
+  #calculate-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+  #result {
+    margin-left: 1.5rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  body {
+    font-size: 55%;
+  }
+
+  button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .form-side {
+    width: 16rem;
+    border-radius: 0%;
+    margin: 0.5rem 0rem 2rem 0rem;
+    margin-left: 2rem;
+    background-color: rgba(255, 255, 255, 0.696);
+    padding-bottom: 1rem;
+  }
+  .ft-in input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .w8-in input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  select {
+    padding: 0.2rem 0.5rem;
+    width: 8rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .form-in {
+    width: 8rem;
+    margin-left: 1rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  .form-in h2 {
+    margin-bottom: 0.5rem;
+  }
+  label {
+    font-size: 0.8rem;
+    width: 5rem;
+  }
+  #result {
+    margin-left: 3rem;
+  }
+  option {
+    font-size: 0.8rem;
+  }
+  #calculate-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+  #result {
+    margin-left: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  body {
+    font-size: 55%;
+  }
+
+  button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .form-side {
+    width: 16rem;
+    border-radius: 0%;
+    margin: 0.5rem 0rem 2rem 3rem;
+
+    background-color: rgba(255, 255, 255, 0.696);
+    padding-bottom: 1rem;
+  }
+  .ft-in input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .w8-in input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  select {
+    padding: 0.2rem 0.5rem;
+    width: 8rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .form-in {
+    width: 8rem;
+    margin-left: 1rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  .form-in h2 {
+    margin-bottom: 0.5rem;
+  }
+  label {
+    font-size: 0.8rem;
+    width: 5rem;
+  }
+  #result {
+    margin-left: 3rem;
+  }
+  option {
+    font-size: 0.8rem;
+  }
+  #calculate-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+  #result {
+    margin-left: 0.3rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  body {
+    font-size: 55%;
+  }
+
+  button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .form-side {
+    width: 16rem;
+    border-radius: 0%;
+    margin: 0.5rem 0rem 2rem 0rem;
+    margin-left: 1.7rem;
+    background-color: rgba(255, 255, 255, 0.696);
+    padding-bottom: 1rem;
+  }
+  .ft-in input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .w8-in input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  select {
+    padding: 0.2rem 0.5rem;
+    width: 8rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .form-in {
+    width: 8rem;
+    margin-left: 1rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  .form-in h2 {
+    margin-bottom: 0.5rem;
+  }
+  label {
+    font-size: 0.8rem;
+    width: 5rem;
+  }
+  #result {
+    margin-left: 3rem;
+  }
+  option {
+    font-size: 0.8rem;
+  }
+  #calculate-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+  #result {
+    margin-left: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  body {
+    font-size: 55%;
+  }
+
+  button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .form-side {
+    width: 14rem;
+    border-radius: 0%;
+    margin: 0.5rem 0rem 2rem 0rem;
+    margin-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.696);
+    padding-bottom: 1rem;
+  }
+  .ft-in input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+  .w8-in input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+  select {
+    padding: 0.2rem 0.5rem;
+    width: 8rem;
+    font-size: 0.6rem;
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+  label {
+    font-size: 0.8rem;
+    width: 5rem;
+  }
+  option {
+    font-size: 0.8rem;
+  }
+  #calculate-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+  #result {
+    margin-left: 0.3rem;
+  }
+  #bmiForm {
+    margin-left: -1rem;
+  }
+}
